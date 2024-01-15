@@ -31,7 +31,6 @@ function writeLogoFile(str) {
 }
 // Process shapes
 function processCircle(data) {
-  console.log("in circle");
   const circle = new Circle();
   let renderStr = "";
 
@@ -43,11 +42,9 @@ function processCircle(data) {
   // render the strings to build the circle
   renderStr =
     `${svgHeaderStr}` + circle.render() + circle.renderLogo() + `${svgEndStr}`;
-  console.log(renderStr);
   writeLogoFile(renderStr);
 }
 function processTriangle(data) {
-  console.log("in triangle");
   const triangle = new Triangle();
   let renderStr = "";
 
@@ -59,11 +56,9 @@ function processTriangle(data) {
   // render the strings to build the circle
   renderStr =
     `${svgHeaderStr}` + triangle.render() + triangle.renderLogo() + `${svgEndStr}`;
-  console.log(renderStr);
   writeLogoFile(renderStr);
 }
 function processSquare(data) {
-  console.log("in square");
   const square = new Square();
   let renderStr = "";
 
@@ -75,7 +70,6 @@ function processSquare(data) {
   // render the strings to build the circle
   renderStr =
     `${svgHeaderStr}` + square.render() + square.renderLogo() + `${svgEndStr}`;
-  console.log(renderStr);
   writeLogoFile(renderStr);
 }
 
@@ -107,7 +101,6 @@ inquirer
     },
   ])
   .then((responses) => {
-    console.log(responses);
     switch (responses.logoShape) {
       case "Circle":
         processCircle(responses);
