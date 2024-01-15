@@ -41,7 +41,7 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
 ### Mock-Up
 
-Walkthrough: http://drive.google.com/file/d/1hQO74V5jXslkkn_cB_XdEXaCpzg0NTlN/view
+Walkthrough: https://drive.google.com/file/d/1MQNn3KrV9oFHfq0EPDzZHeuH3-ElYNQQ/view
 
 The following screenshot is an example of the image created using the following input:
 
