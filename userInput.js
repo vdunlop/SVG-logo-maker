@@ -1,8 +1,8 @@
 // Include packages:
 // Inquirer for user input.
 // fs for write file.
-const fs = require("fs");
 const inquirer = require("inquirer");
+const fs = require("fs");
 const svgFileName = "./outputSVG/logo.svg";
 
 // Strings used for creating the SVG file.
@@ -16,18 +16,6 @@ const OK = 0;
 const ERR_STATUS = 1;
 let responseStatus = OK;
 
-function verifyResponses(data) {
-  console.log("in verify");
-  return OK;
-}
-function formatLogo(data) {
-  const temp = "hi";
-  console.log("in format log");
-  return temp;
-}
-function createLogoFile(textStr, textFileName) {
-  console.log(`file ${textFileName} and string is ${textStr}`);
-}
 // Questions for user input
 inquirer
   .prompt([
@@ -65,10 +53,9 @@ inquirer
     formatLogo(responses);
     createLogoFile();
   });
-
 /* .catch((err) => {
     console.error(err);
     console.log("Something went wrong.");
   });*/
 
-//module.exports = userInput;
+module.exports = userInput;
