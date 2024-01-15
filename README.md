@@ -43,6 +43,18 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
 Walkthrough: http://drive.google.com/file/d/1hQO74V5jXslkkn_cB_XdEXaCpzg0NTlN/view
 
+The following screenshot is an example of the image created using the following input:
+
+logo text = VMD
+
+logo text color = blue
+
+shape color = pink
+
+shape = square
+
+![Alt text](./Images/logo-project10.jpg)
+
 ## Installation-Execution
 
 Open a command terminal, go to the SVG-logo-maker folder and execute index.js using the command "node index.js".
