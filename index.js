@@ -38,7 +38,7 @@ function processCircle(data) {
   // Set up circle with input colors and text
   circle.setColor(data.shapeColor);
   circle.setLogoTextColor(data.textColor);
-  circle.setLogoText(data.setLogoText);
+  circle.setLogoText(data.logoText);
 
   // render the strings to build the circle
   renderStr =
@@ -54,7 +54,7 @@ function processTriangle(data) {
   // Set up circle with input colors and text
   triangle.setColor(data.shapeColor);
   triangle.setLogoTextColor(data.textColor);
-  triangle.setLogoText(data.setLogoText);
+  triangle.setLogoText(data.logoText);
 
   // render the strings to build the circle
   renderStr =
@@ -70,11 +70,11 @@ function processSquare(data) {
   // Set up circle with input colors and text
   square.setColor(data.shapeColor);
   square.setLogoTextColor(data.textColor);
-  square.setLogoText(data.setLogoText);
+  square.setLogoText(data.logoText);
 
   // render the strings to build the circle
   renderStr =
-    `${svgHeaderStr}` + circle.render() + square.renderLogo() + `${svgEndStr}`;
+    `${svgHeaderStr}` + square.render() + square.renderLogo() + `${svgEndStr}`;
   console.log(renderStr);
   writeLogoFile(renderStr);
 }
