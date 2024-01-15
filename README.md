@@ -53,7 +53,7 @@ shape color = pink
 
 shape = square
 
-![Alt text](./Images/logo-project10.jpg)
+![Alt text](./examples/logo-project10.jpg)
 
 ## Installation-Execution
 
